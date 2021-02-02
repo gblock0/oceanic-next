@@ -150,19 +150,19 @@ endfunction
   " LSP
   call s:hi('LspDiagnosticsDefaultError',         s:red,    '','','')
   call s:hi('LspDiagnosticsSignError',            s:red,    '','','')
-  call s:hi('LspDiagnosticsUnderlineError',       s:red,    '','','')
+  call s:hi('LspDiagnosticsUnderlineError',       s:red,    '','underline','')
 
   call s:hi('LspDiagnosticsDefaultWarning',       s:yellow, '','','')
   call s:hi('LspDiagnosticsSignWarning',          s:yellow, '','','')
-  call s:hi('LspDiagnosticsUnderlineWarning',     s:yellow, '','','')
+  call s:hi('LspDiagnosticsUnderlineWarning',     s:yellow, '','underline','')
 
   call s:hi('LspDiagnosticsDefaultInformation',   s:blue,   '','','')
   call s:hi('LspDiagnosticsSignInformation',      s:blue,   '','','')
-  call s:hi('LspDiagnosticsUnderlineInformation', s:blue,   '','','')
+  call s:hi('LspDiagnosticsUnderlineInformation', '',   '','underline','')
 
   call s:hi('LspDiagnosticsDefaultHint',          s:cyan,   '','','')
   call s:hi('LspDiagnosticsSignHint',             s:cyan,   '','','')
-  call s:hi('LspDiagnosticsUnderlineHint',        s:cyan,   '','','')
+  call s:hi('LspDiagnosticsUnderlineHint',        '',   '','underline',s:cyan)
 
   " TreeSitter stuff
   call s:hi('TSInclude',                  s:cyan,   '',       '',          '')
