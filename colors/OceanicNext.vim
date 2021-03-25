@@ -44,8 +44,6 @@
   let s:brown  = ['#ab7967', '137']
   let s:white  = ['#ffffff', '15']
   let s:none   = ['NONE',    'NONE']
-  let s:diffGreen = ['#012800', '114']
-  let s:diffRed = ['#340001', '203']
 
 " }}}
 " {{{ Highlight function
@@ -208,15 +206,15 @@ endfunction
   call s:hi('cssClassName',                       s:purple, '',       '',          '')
 
 
-  call s:hi('DiffAdd',                            s:green,  s:base01, s:bold,      '')
+  call s:hi('DiffAdd',                            s:base07, s:green,  s:bold,      '')
   call s:hi('DiffChange',                         s:base03, s:base01, '',          '')
-  call s:hi('DiffDelete',                         s:red,    s:base01, '',          '')
+  call s:hi('DiffDelete',                         s:base07, s:red,    '',          '')
   call s:hi('DiffText',                           s:blue,   s:base01, '',          '')
-  call s:hi('DiffAdded',                          s:base07, s:diffGreen,  s:bold,      '')
+  call s:hi('DiffAdded',                          s:green,  '',       s:bold,      '')
   call s:hi('DiffFile',                           s:red,    s:base00, '',          '')
   call s:hi('DiffNewFile',                        s:green,  s:base00, '',          '')
   call s:hi('DiffLine',                           s:blue,   s:base00, '',          '')
-  call s:hi('DiffRemoved',                        s:base07, s:diffRed,    s:bold,      '')
+  call s:hi('DiffRemoved',                        s:red,    '',       s:bold,      '')
 
   call s:hi('gitCommitOverflow',                  s:red,    '',       '',          '')
   call s:hi('gitCommitSummary',                   s:green,  '',       '',          '')
