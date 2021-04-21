@@ -148,19 +148,19 @@ endfunction
   call s:hi('Typedef',                            s:yellow, '',       '',          '')
 
   " LSP
-  call s:hi('LspDiagnosticsDefaultError',         '',       '',       '',          '')
+  call s:hi('LspDiagnosticsDefaultError',         s:red,    '',       '',          '')
   call s:hi('LspDiagnosticsSignError',            s:red,    '',       '',          '')
   call s:hi('LspDiagnosticsUnderlineError',       '',       '',       'undercurl', '')
 
-  call s:hi('LspDiagnosticsDefaultWarning',       '',       '',       '',          '')
+  call s:hi('LspDiagnosticsDefaultWarning',       s:yellow, '',       '',          '')
   call s:hi('LspDiagnosticsSignWarning',          s:yellow, '',       '',          '')
   call s:hi('LspDiagnosticsUnderlineWarning',     '',       '',       'undercurl', '')
 
-  call s:hi('LspDiagnosticsDefaultInformation',   '',       '',       '',          '')
+  call s:hi('LspDiagnosticsDefaultInformation',   s:blue,   '',       '',          '')
   call s:hi('LspDiagnosticsSignInformation',      s:blue,   '',       '',          '')
   call s:hi('LspDiagnosticsUnderlineInformation', '',       '',       'undercurl', '')
 
-  call s:hi('LspDiagnosticsDefaultHint',          '',       '',       '',          '')
+  call s:hi('LspDiagnosticsDefaultHint',          s:cyan,   '',       '',          '')
   call s:hi('LspDiagnosticsSignHint',             s:cyan,   '',       '',          '')
   call s:hi('LspDiagnosticsUnderlineHint',        '',       '',       'undercurl', '')
 
